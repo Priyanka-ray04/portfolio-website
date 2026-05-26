@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>My Portfolio</title>
+    <title>Priyanka Portfolio</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Font Awesome -->
+    <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,42 +17,263 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
+    <!-- ================= NAVBAR ================= -->
+
     <header>
       <nav class="navbar">
-        <h2 class="logo">Portfolio</h2>
+        <h2 class="logo"><i class="fa-solid fa-code"></i> PR</h2>
 
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero" id="home">
+      <!-- LEFT CONTENT -->
+
       <div class="hero-text">
-        <h1>Hello, I'm Priyanka 👋</h1>
+        <h1>Hi, I'm <span>Priyanka Ray</span></h1>
 
         <h2>Frontend Developer</h2>
 
         <p>
-          I build clean, responsive and user-friendly websites using HTML, CSS
+          I create clean, responsive and user-friendly websites using HTML, CSS
           and JavaScript.
         </p>
 
-        <button>View Projects</button>
+        <div class="hero-buttons">
+          <a href="resume.pdf" download>
+            <button class="btn-outline">Download Resume</button>
+          </a>
+        </div>
+
+        <!-- SOCIAL ICONS -->
+
+        <div class="social-icons">
+          <a href="https://github.com/Priyanka-ray04">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
       </div>
 
+      <!-- RIGHT IMAGE -->
+
       <div class="hero-image">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png"
-          alt="developer image"
-        />
+        <img src="./images/tv.png" alt="developer image" />
       </div>
     </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about hidden" id="about">
+      <!-- LEFT IMAGE -->
+
+      <div class="about-image">
+        <img
+          src="./images/WhatsApp Image 2026-05-24 at 10.35.06 AM (1).jpeg"
+          alt="about image"
+        />
+      </div>
+
+      <!-- RIGHT CONTENT -->
+
+      <div class="about-content">
+        <h1>About Me</h1>
+
+        <p>
+          I am a passionate frontend developer who enjoys creating clean and
+          responsive websites using HTML, CSS and JavaScript. I love learning
+          new technologies and building real-world projects.
+        </p>
+
+        <!-- SKILLS -->
+
+        <div class="skills">
+          <div class="skill-card">HTML</div>
+
+          <div class="skill-card">CSS</div>
+
+          <div class="skill-card">JavaScript</div>
+
+          <div class="skill-card">Git</div>
+
+          <div class="skill-card">GitHub</div>
+
+          <div class="skill-card">Responsive Design</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECT SECTION ================= -->
+
+    <section class="projects hidden" id="projects">
+      <h1 class="section-title">My Projects</h1>
+
+      <div class="project-container">
+        <!-- PROJECT 1 -->
+
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b"
+            alt="todo app"
+          />
+
+          <div class="project-content">
+            <h2>Smart Todo App</h2>
+
+            <p>
+              A responsive todo app with local storage, filtering and task
+              management features.
+            </p>
+
+            <div class="project-buttons">
+              <button class="project-btn">Live Demo</button>
+
+              <button class="project-btn-outline">GitHub</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+            alt="coffee website"
+          />
+
+          <div class="project-content">
+            <h2>Coffee House</h2>
+
+            <p>
+              A modern and responsive coffee shop website built using HTML, CSS,
+              and JavaScript.
+            </p>
+
+            <div class="project-buttons">
+              <button class="project-btn">Live Demo</button>
+
+              <button class="project-btn-outline">GitHub</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+            alt="restaurant website"
+          />
+
+          <div class="project-content">
+            <h2>Restaurant Website</h2>
+
+            <p>
+              A responsive restaurant website with menu, services and image
+              slider functionality.
+            </p>
+
+            <div class="project-buttons">
+              <button class="project-btn">Live Demo</button>
+
+              <button class="project-btn-outline">GitHub</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+            alt="restaurant website"
+          />
+
+          <div class="project-content">
+            <h2>Email Template</h2>
+
+            <p>
+              A beginner-friendly responsive email template project built using
+              HTML and CSS.
+            </p>
+
+            <div class="project-buttons">
+              <button class="project-btn">Live Demo</button>
+
+              <button class="project-btn-outline">GitHub</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact hidden" id="contact">
+      <h1 class="section-title">Contact Me</h1>
+
+      <div class="contact-container">
+        <!-- LEFT SIDE -->
+
+        <div class="contact-info">
+          <h2>Let's Work Together</h2>
+
+          <p>
+            Feel free to contact me for collaboration, project ideas or frontend
+            development work.
+          </p>
+
+          <div class="contact-details">
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              priyanka.ray0409@gmail.com
+            </p>
+
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              +91 9123030299
+            </p>
+
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              Gurugram, India
+            </p>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <form class="contact-form">
+          <input type="text" placeholder="Enter your name" />
+
+          <input type="email" placeholder="Enter your email" />
+
+          <textarea rows="6" placeholder="Your message"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+      <p>© 2026 Priyanka Ray | All Rights Reserved</p>
+    </footer>
 
     <!-- JS -->
     <script src="script.js"></script>
